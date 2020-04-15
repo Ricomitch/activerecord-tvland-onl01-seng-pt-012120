@@ -6,7 +6,7 @@ class Actor < ActiveRecord::Base
     fn = "#{self.first_name} #{self.last_name}"
     fn
   end
-  
+
   def list_roles
     roles = []
     characters = self.characters.map{|c| c.name}
